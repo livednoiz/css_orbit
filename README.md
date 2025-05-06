@@ -54,8 +54,8 @@ Dieses Projekt steht unter der **MIT-Lizenz**. Du kannst es frei nutzen, anpasse
 
 ## 🙆‍♂️ Autor
 
-**\[Dein Name]** – Freelancer & Webentwickler
-📥 [freelance@deine-domain.dev](mailto:freelance@blackenter.de)
+**\[Sascha Gebel]** – Freelancer & Webentwickler
+📥 [freelance@blackenter.de](mailto:freelance@blackenter.de)
 🌐 [blackenter.de](https://blackenter.de)
 
 > Folge mir auf GitHub für weitere visuelle Experimente & Web3-Anwendungen!

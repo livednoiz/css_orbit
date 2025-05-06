@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #2a2d34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.centerpiece-wrapper {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.centerpiece {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px;
+  border-radius: 50%;
+  background: url('https://avatars.githubusercontent.com/u/163433000?s=400&u=c9014a2797dcbb6db2bdc4820b79a4e47708bd9d&v=4') no-repeat center/cover;
+  border: 4px solid #fff;
+  z-index: 10;
+}
+
+.orbit-ring {
+  position: absolute;
+  border: 1px dashed rgba(255,255,255,0.1);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit1, .orbit2, .orbit3 {
+  animation: spin linear infinite;
+}
+
+.orbit1 {
+  width: 240px;
+  height: 240px;
+  animation-duration: 20s;
+}
+
+.orbit2 {
+  width: 360px;
+  height: 360px;
+  animation-duration: 30s;
+}
+
+.orbit3 {
+  width: 480px;
+  height: 480px;
+  animation-duration: 40s;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-inner {
+  width: 30px; /* Kleinere Größe der Icons */
+  height: 30px; /* Kleinere Größe der Icons */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: counter-rotate linear infinite;
+}
+
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes counter-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
